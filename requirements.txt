@@ -1,20 +1,37 @@
-numpy==1.26.4, 
-chromadb==0.4.24, 
-pytesseract, 
-opencv-python-headless, 
-pdf2image, 
-Pillow, 
-sentence-transformers, 
-langchain, 
-langchain-groq, 
-langchain-community,
-groq, 
-ultralytics, 
-doclayout-yolo, 
-huggingface_hub, 
-fastapi, 
-uvicorn, 
-pyngrok, 
-python-multipart, 
-nest_asyncio, 
+# ── Core numerical / data ──────────────────────────────────────────
+numpy==1.26.4
+pandas
+Pillow
+
+# ── Computer vision / OCR ──────────────────────────────────────────
+opencv-python-headless
+pytesseract
+pdf2image
+
+# ── Layout detection (DocLayout-YOLO) ──────────────────────────────
+ultralytics
+doclayout-yolo
+huggingface_hub
+torch
+
+# ── Vector DB / embeddings / semantic search ───────────────────────
+chromadb==0.4.24
+sentence-transformers
 rank-bm25
+
+# ── LLM correction agent (Groq / LangChain) ────────────────────────
+langchain
+langchain-groq
+langchain-community
+groq
+
+# ── Web app / API layer ─────────────────────────────────────────────
+fastapi
+uvicorn
+python-multipart
+pyngrok
+nest_asyncio
+
+# ── Plotting / notebook utilities ──────────────────────────────────
+matplotlib
+python-dotenv
